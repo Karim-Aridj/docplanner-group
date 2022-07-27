@@ -5,59 +5,170 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Docplanner Group</title>
 </head>
 <body>
 
     <!--Nav bar-->
     <header class="main-header">
-        <div class="section_inner">
-            <!--before-->
-            <h1>
-                <a href="/">
-                    <img class="logo-docplanner"src="/images/logo-docplanner" alt="docplanner group" >
+        <div class="header-inner">
+            <div id="logo">
+                <a href="#">
+                    <img class="logo-docplanner" src="/images/logo-docplanner.svg" alt="docplanner group">
                 </a>
-            </h1>
+            </div>
+            <nav class="main-nav">
+                <ul class="main-menu">
+                    <li>
+                        <a class="aboutus-link"href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a class="career-link" href="#">Career</a>
+                    </li>
+                    <li class="dropdown">
+                        <div class="departments-menu">
+                            <button class="department-link">Departments</button>
+                            <ul>
+                                <li>
+                                    <a href="#">Marketing & PR</a>
+                                </li>
+                                <li>
+                                    <a href="#">Customer Success & Sales</a>
+                                </li>
+                                <li>
+                                    <a href="#">IT, Product, Data</a>
+                                </li>
+                                <li>
+                                    <a href="#">Finance & Administration</a>
+                                </li>
+                                <li>
+                                    <a href="#">HR & more</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <nav class="main-nav">
-        <ul class="main-menu">
-            <li>
-                <a class="is-current" href="/">About Us</a>
-            </li>
-            <li>
-                <a href="/career">Career</a>
-            </li>
-            <li class="dropdown">
-                <a>
-                    Departments
-                    <br>
-                </a>
-                <div class="dropdown-content">
-                    <ul>
-                        <li>
-                            <a href="/department?dep=marketing">Marketing & PR</a>
-                        </li>
-                        <li>
-                            <a href="/department?dep=customer">Customer Success & Sales</a>
-                        </li>
-                        <li>
-                            <a href="/department?dep=it">IT, Product, Data</a>
-                        </li>
-                        <li>
-                            <a href="/department?dep=finance">Finance & Administration</a>
-                        </li>
-                        <li>
-                            <a href="/department?dep=marketing">HR & more</a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-        </ul>
-        <!--after-->
-      </nav>
     </header>
-
-
+    <section class="healthcare">
+        <img class=logo-healthcare src="/icons/sygnet.png" alt="logo-healthcare">
+        <h1 class="healthcare-h1">Making the healthcare experience more human </h1>
+        <div class="grid">
+            <div class="col-1">
+                <p> We want patients to find the perfect doctor and book an appointment in the most easy way. The patient journey should be enjoyable, and that's why we are always next to them: to help them find the best possible care. Anytime, anywhere</p>
+            </div>
+            <div class="col-2">
+                <p>We also help doctors to better manage their practice and build their online reputation. With our integrated end-to-end solution, doctors are able not only to improve their online presence, but also to devote their time to what really matters: their patients.</p>
+            </div>
+        </div>
+    </section>
+    <section class="service-main">
+        <div class="service-inner">
+            <div class="card-patients">
+                <div class="card-details">
+                <i class="fa-solid fa-users"></i>
+                <h2 class="for-patients">For Patients</h2>
+                <p>Find a doctor, book a visit and solve any health-related doubt</p>
+                </div>
+                <div class="card-country">
+                    <div class="country-content">
+                        <select class="country-options">
+                            <option class="button-country">Choose Country</option>
+                            <option value="Argentina">Algeria</option>
+                            <option value="Argentina">United Kingdom</option>
+                            <option value="Argentina">Turkey</option>
+                            <option value="Argentina">Norway</option>
+                            <option value="Argentina">Germany</option>
+                            <option value="Argentina">Malta</option>
+                            <option value="Argentina">United States</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="card-doctors">
+                <div class="card-details">
+                    <i class="fa-solid fa-user-doctor"></i>
+                <h2 class="for-doctors">For doctors</h2>
+                <p>Save time managing visits and cut no-shows by half</p>
+                </div>
+                <div class="card-country">
+                    <div class="country-content">
+                        <select class="country-options">
+                            <option>Choose Country</option>
+                            <option value="Argentina">Algeria</option>
+                            <option value="Argentina">United Kingdom</option>
+                            <option value="Argentina">Turkey</option>
+                            <option value="Argentina">Norway</option>
+                            <option value="Argentina">Germany</option>
+                            <option value="Argentina">Malta</option>
+                            <option value="Argentina">United States</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="card-clinics">
+                <div class="card-details">
+                <i class="fa-solid fa-hospital"></i>
+                <h2 class="for-doctors">For clinics</h2>
+                <p>Deliver an exceptional patient experience in your clinic</p>
+                </div>
+                <div class="card-country">
+                    <div class="country-content">
+                        <select class="country-options">
+                            <option>Choose Country</option>
+                            <option value="Argentina">Algeria</option>
+                            <option value="Argentina">United Kingdom</option>
+                            <option value="Argentina">Turkey</option>
+                            <option value="Argentina">Norway</option>
+                            <option value="Argentina">Germany</option>
+                            <option value="Argentina">Malta</option>
+                            <option value="Argentina">United States</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="brands">
+        <div class="brand-content">
+            <h1>We are a global company with local culture</h1>
+            <ul class="brands-logos">
+                <li>
+                    <img src="/icons/sygnet.png" alt="Znanylekarz" width="20px" height="20px"><a href="#">Znanylekarz</a>
+                </li>
+                <li>
+                    <img src="/icons/sygnet.png" alt="Znanylekarz" width="20px" height="20px"><a href="#">Doctoralia</a>
+                </li>
+                <li>
+                    <img src="/icons/sygnet.png" alt="Znanylekarz" width="20px" height="20px"><a href="#">MioDottore</a>
+                </li>
+                <li>
+                    <img src="/icons/sygnet.png" alt="Znanylekarz" width="20px" height="20px"><a href="#">DoktorTakvimi</a>
+                </li>
+                <li>
+                    <img src="/icons/sygnet.png" alt="Znanylekarz" width="20px" height="20px"><a href="#">ZnamyLekar</a>
+                </li>
+                <li class="tempo-logo">
+                    <img src="/icons/logo-tuotempo.svg" alt="">
+                </li>
+                <li class="gipo-logo">
+                    <img src="/icons/logo-gipo.svg" alt="">
+                </li>
+                <li class="clinic-logo">
+                    <img src="/icons/logo-clinicloud.svg" alt="">
+                </li>
+                <li class="jameda-logo">
+                    <img src="/icons/logo-jameda.svg" alt="">
+                </li>
+            </ul>
+        </div>
+    </section>
+    
    
     
 </body>

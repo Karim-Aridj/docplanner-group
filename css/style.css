@@ -4,8 +4,273 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 html {
     font-size: 16px;
+    box-sizing: border-box;
+    line-height: 1.3;
+
 }
+body{
+    margin: 0px;
+}
+
+.header-inner{
+    height: 80px;
+    max-width: 1015px;
+    padding: 0 20px;
+    margin: 0 auto;
+    position: relative;
+    background: gray;
+    overflow: hidden;
+}
+.logo-docplanner{
+    position: absolute;
+    height: 80px;
+    width: 264px;
+   z-index: 1;
+}
+#logo{
+    position: relative;
+    cursor: pointer;
+}
+
+.main-nav{
+    height: 80px;
+    position: relative;
+ 
+   
+}
+
+.main-menu{
+    height: 80px;
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    float: right;
+    position: relative;
+    background: lightcoral;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+.aboutus-link:hover, .career-link:hover{
+    color: aqua;
+}
+.main-menu a{
+    text-decoration: none;
+}
+
+.dropdown
+ {
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.departments-menu{
+    position: relative;
+    
+}
+.dropdown button{
+    text-decoration: none;
+    border: none;
+    font-size: 16px;
+    background: none;
+    cursor: pointer;
+}
+.dropdown button:hover{
+    color: aqua;
+}
+
+
+.departments-menu ul{
+    position: fixed;
+    border-radius: 5px;
+    margin-left: -70px;
+    margin-top: 10px;
+    width: 250px;
+    height: 200px;
+    padding: 10px 10px 0px 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: left;
+    flex-direction: column;
+    list-style: none;
+    background: lightblue;
+    display: none;
+    
+}
+.dropdown:hover .departments-menu ul { 
+    display: flex;
+    position: fixed;
+    
+}
+
+/*section-1-healthcare*/
+.healthcare{
+    display: flex;
+    height: 300px;
+    background: lightgreen;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ 
+   
+}
+.logo-healthcare{
+   margin: 10px auto;
+    
+    
+}
+.healthcare h1{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-height: 30px;
+    line-height: 1.3;
+    color: #00b39b;
+}
+.grid{
+    background: lightblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100px;
+    max-width: 1015px;
+    flex: 1 1;
+    
+}
+.col-1,
+.col-2{
+    padding: 10px;
+}
+.col-1 p,
+.col-2 p{
+    line-height: 1.5;
+}
+
+/*cards section*/
+.service-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: lightcoral;
+    
+
+}
+.service-inner{
+   max-width: 1015px;
+   height: 50vh;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   
+    
+    background: grey;
+}
+.card-patients{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #00ccb1;
+    color: white;
+    width: 33.33%;
+    border-radius: 10px;
+    height: 345px;
+    padding: 2rem 2rem ;
+    margin: 10px;
+    
+   
+
+}
+.card-doctors{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #3d83df;
+    color: white;
+    width: 33.33%;
+    border-radius: 10px;
+    height: 345px;
+    padding: 2rem 2rem ;
+    margin: 10px;
+  
+}
+.card-clinics{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #1b2734;
+    color: white;
+    width: 33.33%;
+    border-radius: 10px;
+    height: 345px;
+    padding: 2rem 2rem ;
+    margin: 10px;
+
+}
+
+.card-details p{
+    line-height: 1.5;
+    font-size: 1.5rem;
+    
+}
+.card-details h2{
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+.country-options{
+    background: transparent;
+    color: white;
+    border: none;
+    text-decoration: underline;
+    font-size: 16px;
+   
+}
+.country-options option{
+    color: black;
+}
+.brands{
+    display: flex;
+    justify-content: center;
+    height: 20vh;
+
+}
+.brand-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1015px;
+  
+    
+}
+.brands-logos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    flex-wrap: wrap;
+    width: 67%;
+    margin: 0 auto;
+    padding: 2rem 2rem;
+   
+}
+
+
+.brand-content h1{
+    color: #00b39b;
+    width: 33%;
+    letter-spacing: 1px;
+}
+
+
+
+
+
